@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Farmwoo</title>
+</head>
+<body>
+    <p class="title i">Farmwoo</p>
+    <div id="board">
+        
+        <div id="gui">
+
+            <div id="status">
+                <p class="dir"><b>Direction</b> <i>Up</i></p>
+                <p class="speed"><b>Speed</b> <i>0</i></p>
+                <p class="fps"><b>FPS</b> <i>0</i></p>
+            </div>
+
+            <div id="joystick" slot="0,0">
+                <div class="controls">
+                    <div class="positions i">
+                        <span></span>
+                        <div class="t"> ↑ </div>
+                        <span></span>
+                        <div class="l"> ← </div>
+                        <div class="c"> ● </div>
+                        <div class="r"> → </div>
+                        <span></span>
+                        <div class="b"> ↓ </div>
+                        <span></span>
+                    </div>
+                    <div class="range i"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="trn" slot="0,0">
+
+            <span class="bn i" slot="0,0">
+                <div id="player" style="--x: 0; --y: 0;">
+                    <span class="sprite i"></span>
+                </div>
+            </span>
+
+        </div>
+    </div>
+    <div id="capture"></div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
